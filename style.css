@@ -9,9 +9,14 @@ header {
     background-color: #f6eb76;
     text-align: center;
     padding: 20px;
-    transform: translateY(100%);
+    margin-top: 60px;
 }
 
+.logo {
+    height: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
 
 nav ul {
         list-style-type: none;
@@ -21,7 +26,7 @@ nav ul {
 
     nav ul li {
         display: inline;
-        margin: 0 20px;
+        margin: 0 40px;
     }
 
     nav ul li a {
@@ -42,9 +47,17 @@ main {
     transform: translateY();
 }
 
+.form-container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.h1 {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .ampoule-comptainer {
-    padding: 5px;
-    object-position: 50% 50%
+    padding: 80px;
 }
 
 #grey_01 {
@@ -78,39 +91,33 @@ main {
         filter: grayscale(100%);
     }
     #grey_unic {
+        object-position: 50% 50%;
         width: 16.5%;
         filter: grayscale(100%);
     }
 
     #grey_01:hover{
-        filter:  drop-shadow(-10px 10px rgb(200, 0, 255));
+        filter: drop-shadow(-10px 10px rgb(200, 0, 255));
     }
     #grey_02:hover{  
-        filter:  drop-shadow(-7px 7px blue);
+        filter: drop-shadow(-7px 7px blue);
     }
     #grey_03:hover{
-        filter:  drop-shadow(-5px 5px rgb(0, 255, 17));
+        filter: drop-shadow(-5px 5px rgb(0, 255, 17));
     }
     #grey_04:hover{  
-        filter:  drop-shadow(2px 2px rgb(246, 255, 0));
+        filter: drop-shadow(2px 2px rgb(246, 255, 0));
     }
     #grey_05:hover{
         filter: invert(100%) drop-shadow(3px 3px rgb(76, 0, 255));
     }
     #grey_06:hover{  
         filter: drop-shadow( 8px 8px blue);
+    }
+    #grey_unic:hover{  
+        filter: drop-shadow( 8px 8px blue);
 }
 
-
-.form-container {
-    
-    margin: 0 auto;
-}
-
-.h1 {
-    padding: auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 
 
@@ -225,7 +232,6 @@ form {
 
 
 footer {
-    font-size: ;
     text-align: center;
     padding: 0%;
     position: absolute;
