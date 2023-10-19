@@ -32,7 +32,7 @@ nav ul {
     }
     /* Utilisation d'une police de script personnalisée */
     nav ul li a {
-        font-family: 'NomDeVotrePolice', adelia;
+        font-family: 'adelia', adelia;
 }
 
 main {
@@ -42,50 +42,64 @@ main {
     transform: translateY();
 }
 
+.ampoule-comptainer {
+    padding: 5px;
+    object-position: 50% 50%
+}
+
 #grey_01 {
-    rotate: 180deg;
-    width: 23%;
-}
-#grey_02 {
-    rotate: 180deg;
-    width: 17.5%;
-}
-#grey_03 {
-    rotate: 180deg;
-    width: 14%;
-}
-#grey_04 {
-    rotate: 180deg;
-    width: 12.5%;
-}
-#grey_05 {
-    rotate: 180deg;
-    width: 13%;
-}
-#grey_06 {
-    rotate: 180deg;
-    width: 20s%;
-}
+        rotate: 180deg;
+        width: 20%;
+        filter: grayscale(100%);
+    }
+    #grey_02 {
+        rotate: 180deg;
+        width: 16.5%;
+        filter: grayscale(100%);
+    }
+    #grey_03 {
+        rotate: 180deg;
+        width: 14.1%;
+        filter: grayscale(100%);
+    }
+    #grey_04 {
+        rotate: 180deg;
+        width: 13.9%;
+        filter: grayscale(100%);
+    }
+    #grey_05 {
+        rotate: 180deg;
+        width: 14%;
+        filter: grayscale(100%);
+    }
+    #grey_06 {
+        rotate: 180deg;
+        width: 17%;
+        filter: grayscale(100%);
+    }
+    #grey_unic {
+        width: 16.5%;
+        filter: grayscale(100%);
+    }
 
-#grey_01:hover{
-    color: blue;
-    filter: brightness(1.2);
-    
-
+    #grey_01:hover{
+        filter:  drop-shadow(-10px 10px rgb(200, 0, 255));
+    }
+    #grey_02:hover{  
+        filter:  drop-shadow(-7px 7px blue);
+    }
+    #grey_03:hover{
+        filter:  drop-shadow(-5px 5px rgb(0, 255, 17));
+    }
+    #grey_04:hover{  
+        filter:  drop-shadow(2px 2px rgb(246, 255, 0));
+    }
+    #grey_05:hover{
+        filter: invert(100%) drop-shadow(3px 3px rgb(76, 0, 255));
+    }
+    #grey_06:hover{  
+        filter: drop-shadow( 8px 8px blue);
 }
-/*img.ampoule {
-    width: auto;
-    height: auto;
-    transition: filter 0.3s;
-}
-
-img.ampoule:hover {
-    filter: brightness(1.2);
-    
-    
-}*/
-
-
 
 
 .form-container {
@@ -98,9 +112,7 @@ img.ampoule:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.ampoule-comptainer {
-    padding: 30px;
-}
+
 
 .link-commande {
     padding: 80px;
