@@ -6,26 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Commander</title>
-    <style>
-        /* Style de base pour le menu */
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        /* Style pour les liens du menu */
-        a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -40,63 +21,78 @@
         </nav>
     </header>
     <main>
+
         <body>
             <div class="commande">
-        
+
                 <h1>De quel couleur voulez vous voir la vie ?</h1>
                 <form action="traitement_commande.php" method="post">
-        
-        
-                    <label for="email">Adresse e-mail :</label>
-                    <input type="email" id="email" name="email" required><br><br>
+
+
+
                     <div class="produit">
-                        <h2></h2>
-        
                         <div class="selection-produit">
-                            <input type="checkbox" id="bleu" name="bleu">
-                            <label for="produit1">Bleu</label>
-                            <input type="checkbox" id="produit2" name="produit">
-                            <label for="produit2">Rouge</label>
-                            <input type="checkbox" id="produit3" name="produit">
-                            <label for="produit3">Orange</label>
-                            <input type="checkbox" id="produit4" name="produit">
-                            <label for="produit4">Jaune</label>
-                            <input type="checkbox" id="produit5" name="produit">
-                            <label for="produit5">violet</label>
-                            <input type="checkbox" id="produit6" name="produit" checked>
-                            <label for="produit6">Guirlande</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="selection-produit-bleu" name="ampoule-bleu">
+                                    <label for="ampoule-bleu">Bleu</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="selection-produit-ampoule-rouge" name="ampoule-rouge">
+                                    <label for="ampoule-rouge">Rouge</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="selection-produit-ampoule-orange" name="ampoule-orange">
+                                    <label for="ampoule-orange">Orange</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="selection-produit-ampoule-jaune" name="ampoule-jaune">
+                                    <label for="ampoule-jaune">Jaune</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="selection-produit-ampoule-violet" name="ampoule-violet">
+                                    <label for="ampoule-violet">Violet</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="selection-produit-guirlande" name="guirlande-girlande"
+                                        checked>
+                                    <label for="guirlande-guirlande">Guirlande</label>
+                                </li>
+                            </ul>
                         </div>
-        
-                        <div class="prix-selection">
-                            <p>Prix : €</p>
-                        </div>
-        
-                        <div class="container-selection-produit">
+
+                        <div class="container-preview-produit">
                             <img id="image-produit" src="image\ampoule_couleur-aspect_8_5_width_720.jpg" alt="guirlande"
                                 class="image-produit">
                             <img src="image\color_04.png" alt="Image du produit 2" class="image-produit">
                             <img src="produit3.jpg" alt="Image du produit 3" class="image-produit">
                         </div>
-        
-                        <!-- Ajoutez d'autres informations sur les produits ici -->
+
+                        <div class="prix-selection">
+                            <p>Prix : €</p>
+                        </div>
                     </div>
-        
-        
-                    <label for="quantite">Quantité :</label>
-                    <input type="number" id="quantite" name="quantite" required><br><br>
-                    <label for="nom">Nom du client :</label>
-                    <input type="text" id="nom" name="nom" required><br><br>
-        
-                    <label for="adresse">Adresse de livraison :</label>
-                    <textarea id="adresse" name="adresse" required></textarea><br><br>
-        
-                    <label for="tel">Numéro de téléphone :</label>
-                    <input type="tel" id="tel" name="tel"><br><br>
-        
-                    <label for="instructions">Instructions spéciales :</label>
-                    <textarea id="instructions" name="instructions"></textarea><br><br>
-        
-                    <input type="submit" value="Passer la commande">
+
+                    <div class="imformation-client">
+                        <label for="email">Adresse e-mail :</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="quantite">Quantité :</label>
+                        <input type="number" id="quantite" name="quantite" required><br><br>
+                        <label for="nom">Nom du client :</label>
+                        <input type="text" id="nom" name="nom" required><br><br>
+
+                        <label for="adresse">Adresse de livraison :</label>
+                        <textarea id="adresse" name="adresse" required></textarea><br><br>
+
+                        <label for="tel">Numéro de téléphone :</label>
+                        <input type="tel" id="tel" name="tel"><br><br>
+
+                        <label for="instructions">Instructions spéciales :</label>
+                        <textarea id="instructions" name="instructions"></textarea><br><br>
+
+                        <input class="button-commande" id="button-page-commande" value="Envoyer la lumière">
+                    </div>
+
                 </form>
             </div>
             </div>
